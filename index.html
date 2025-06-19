@@ -108,6 +108,10 @@
         👕 BrandStyle
       </div>
 
+<button id="hamburger" class="sm:hidden text-blue-800 text-3xl focus:outline-none">
+  ☰
+</button>
+
       <!-- Profile Section (Top Right) -->
       <div class="flex items-center space-x-4">
         <div class="text-right hidden sm:block">
@@ -187,6 +191,16 @@
       </div>
     `;
   });
+
+  const hamburger = document.getElementById('hamburger');
+  const sidebar = document.getElementById('sidebar');
+
+  hamburger.addEventListener('click', () => {
+    sidebar.classList.toggle('-translate-x-full');
+    sidebar.classList.toggle('translate-x-0');
+  });
+
+
 </script>
 
 </body>
