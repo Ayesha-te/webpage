@@ -67,10 +67,10 @@
     border-radius: 10px;
   }
 
-  /* Optional: Hide scrollbar on mobile if you prefer cleaner look */
+
 @media (max-width: 768px) {
   .scrolling-wrapper::-webkit-scrollbar {
-    width: 6px; /* Show scrollbar on mobile */
+    width: 6px; 
   }
 
   .scrolling-wrapper::-webkit-scrollbar-thumb {
@@ -86,17 +86,17 @@
 <body class="bg-gray-100 font-sans flex">
 
   <!-- ✅ Sidebar -->
-  <aside class="w-64 min-h-screen bg-blue-800 text-white p-6 hidden sm:block fixed">
-    <h1 class="text-3xl font-bold mb-1"></h1>
-    <p class=" text-3xl font-bold mb-1">Catagories</p>
-    <nav class="space-y-4 text-base">
-      <a href="#" class="block hover:bg-blue-700 px-3 py-2 rounded">Home</a>
-      <a href="#" class="block hover:bg-blue-700 px-3 py-2 rounded">Men</a>
-      <a href="#" class="block hover:bg-blue-700 px-3 py-2 rounded">Women</a>
-      <a href="#" class="block hover:bg-blue-700 px-3 py-2 rounded">Accessories</a>
-      <a href="#" class="block hover:bg-blue-700 px-3 py-2 rounded">Contact</a>
-    </nav>
-  </aside>
+<aside id="sidebar" class="w-64 min-h-screen bg-blue-800 text-white p-6 fixed z-50 hidden sm:block transition-transform transform sm:translate-x-0 -translate-x-full sm:static sm:top-0 top-0 left-0">
+  <h1 class="text-3xl font-bold mb-1">Categories</h1>
+  <nav class="space-y-4 text-base mt-4">
+    <a href="#" class="block hover:bg-blue-700 px-3 py-2 rounded">Home</a>
+    <a href="#" class="block hover:bg-blue-700 px-3 py-2 rounded">Men</a>
+    <a href="#" class="block hover:bg-blue-700 px-3 py-2 rounded">Women</a>
+    <a href="#" class="block hover:bg-blue-700 px-3 py-2 rounded">Accessories</a>
+    <a href="#" class="block hover:bg-blue-700 px-3 py-2 rounded">Contact</a>
+  </nav>
+</aside>
+
 
   <!-- ✅ Main Content -->
   <div class="flex-1 sm:ml-64 w-full">
